@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.contact {
+    width: 100%;
+    height: 50vh;
+    background-color: #221E1F;
+    overflow: auto;
+}
+.container {
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    margin-top: 50px;
+}
+.contactTitle {
+    width: 50%;
+    height: 100%;
+    float: left;
+    text-align: justify;
+}
+.contactTitle span {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 135%;
+    color: #FFFFFF;
+}
+.contactForm {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.divInput {
+    width: 50%;
+    height: 50px;
+    float: left;
+    margin-bottom: 20px;
+}
+.contactInput {
+    width: 90%;
+    height: 40px;
+    background-color: #221E1F;
+    border: 1px solid #fff;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+.contactInput:nth-child(3){
+    width: 95%;
+}
+.textareaInput {
+    width: 95%;
+    height: 200px;
+    background-color: #221E1F;
+    border: 1px solid #fff;
+    padding-left: 10px;
+    resize: none;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: #FFFFFF;
+    opacity: 0.5;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+.contactButton {
+    width: 97%;
+    height: 40px;
+    background: #FFFFFF;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #221E1F;
+}

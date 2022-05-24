@@ -1,0 +1,8 @@
+<svg width="1112" height="370" viewBox="0 0 1112 370" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 185C6 286.068 87.7827 368 188.667 368C289.551 368 371.333 286.068 371.333 185C371.333 83.9319 453.116 2 554 2C654.884 2 736.667 83.9319 736.667 185C736.667 286.068 818.449 368 919.333 368C1020.22 368 1102 286.068 1102 185" stroke="white" stroke-width="3"/>
+<path d="M737 185C737 187.008 736.968 189.008 736.904 191C733.737 289.291 653.06 368 554 368C452.932 368 371 286.068 371 185" stroke="#BDBCBC" stroke-width="3" stroke-miterlimit="16" stroke-dasharray="10 10"/>
+<circle cx="6" cy="185" r="6" fill="white"/>
+<circle cx="371" cy="185" r="6" fill="white"/>
+<circle cx="737" cy="185" r="6" fill="white"/>
+<circle cx="1102" cy="185" r="10" fill="white"/>
+</svg>

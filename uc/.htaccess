@@ -1,0 +1,4 @@
+##### LOCAWEB - NAO REMOVER #####
+AddHandler php73-script .php
+suPHP_ConfigPath /home/trlog2/
+##### LOCAWEB - NAO REMOVER #####

@@ -1,0 +1,78 @@
+@media screen and (max-width: 1366px) {
+    .infoBox {
+        width: 85%;
+        height: 85%;
+        margin-top: 5%;
+    }
+    .infoText {
+        height: 150px;
+    }
+    .offerIcons {
+        margin-top: 200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .offer {
+        height: 150vh;
+    }
+    .infoBox {
+        width: 100%;
+        height: 140vh;
+    }
+    .infoText {
+        width: 90%;
+        height: 20%;
+        float: none;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: justify;
+        margin-top: 20px;
+    }
+    .title {
+        font-size: 14px;
+    }
+    .desc {
+        font-size: 12px;
+    }
+    .offerIcons {
+        margin-top: 10px;
+        display: block;
+    }
+    .offerItens {
+        width: 100%;
+        height: 200px;
+        padding-top: 10px;
+    }
+    .offerItens:nth-child(1) {
+        background-image: url('../icons/food-icon.svg');
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 100px;
+        padding-left: 5%;
+    }
+    .offerItens:nth-child(2) {
+        background-image: url('../icons/eletronic-icon.svg');
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 100px;
+        padding-left: 35%;
+    }
+    .offerItens:nth-child(3) {
+        background-image: url('../icons/wheat-icon.svg');
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 100px;
+        padding-left: 5%;
+    }
+    .itemText {
+        width: 60%;
+        margin-top: 10px;
+    }
+    .itemTitle {
+        font-size: 14px;
+    }
+    .itemDesc {
+        font-size: 12px;
+    }
+}
