@@ -1,0 +1,87 @@
+.offer {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  overflow: auto;
+}
+.infoBox {
+  width: 75%;
+  height: 70%;
+  margin: auto;
+  margin-top: 7.5%;
+  overflow: auto;
+}
+.infoText {
+  width: 50%;
+  height: 200px;
+  float: left;
+}
+.title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 149%;
+  color: #7c161b;
+}
+
+.desc {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #221e1f;
+  opacity: 0.8;
+}
+.offerIcons {
+  width: 100%;
+  height: calc(100% - 255px);
+  margin-top: 250px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.offerItens {
+  width: 30%;
+  height: 100%;
+  margin: auto;
+}
+.offerItens:nth-child(1) {
+  background-image: url("../icons/food-icon.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.offerItens:nth-child(2) {
+  background-image: url("../icons/eletronic-icon.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.offerItens:nth-child(3) {
+  background-image: url("../icons/wheat-icon.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.itemText {
+  width: 100%;
+  height: 170px;
+  margin-top: 250px;
+  text-align: center;
+}
+.itemTitle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 149%;
+  text-align: center;
+  color: #7c161b;
+}
+.itemDesc {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  color: #4f4e4e;
+}

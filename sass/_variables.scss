@@ -1,5 +1,5 @@
 // Colors
-$dark: rgba(35, 37, 38, 1);
+$dark: #221e1f;
 $darker: #353535cf;
 $gradient1: #8093ff 0%;
 $gradient2: #7d9bfa 21.14%;
@@ -13,8 +13,15 @@ $lightGrayishBlue: hsl(220, 16%, 96%);
 $veryLightGray: hsl(0, 0%, 98%);
 $white: hsl(0, 0%, 100%);
 
+// Site colors
+$redBanner: #9e1b21;
+$redLogo: #7c161b;
+$darkNavFade: rgba(0, 0, 0, 0.7);
+$darkText: #221e1f;
+$dark-light: #4f4e4e;
+
 // Font Sizes
-$font-sm: 1rem; // 16px
-$font-med: 1.125rem; // 18px
-$font-lg: 1.25rem;
+$font-sm: 17px;
+$font-med: 30px;
+$font-lg: 50px;
 $font-xlg: 3.25rem;

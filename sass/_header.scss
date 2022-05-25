@@ -39,12 +39,11 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: linear-gradient($darker, transparent);
+    background-image: linear-gradient($dark, transparent);
   }
 
   nav {
     position: relative;
-    background-color: $dark;
     padding-top: 1.0625rem;
     padding-bottom: 1.8rem;
   }
@@ -85,7 +84,7 @@
       text-align: center;
 
       &:hover {
-        background: linear-gradient(90deg, $gradient1, $gradient2, $gradient3);
+        background: $redBanner;
         border-radius: 10px;
         color: $white;
       }
@@ -108,29 +107,21 @@
         content: "";
         display: block;
         position: absolute;
-        height: 1px;
+        height: 2px;
         left: 0;
         right: 0;
         bottom: -30px;
-        background: linear-gradient(90deg, $gradient1, $gradient2, $gradient3);
+        background: $redBanner;
         opacity: 0;
         transition: opacity 300ms ease-in-out;
       }
 
       &:hover {
-        color: #99a9ff;
+        color: $redBanner;
 
         &::before {
           opacity: 1;
         }
-      }
-    }
-
-    a.active {
-      color: #99a9ff;
-
-      &::before {
-        opacity: 1;
       }
     }
   }
@@ -138,138 +129,14 @@
   @include breakpoint-up(large) {
     .button {
       position: relative;
-      padding: 15px 25px;
+      padding: 10px 25px;
       display: block;
       text-decoration: none;
       overflow: hidden;
       border-radius: 15px;
       border: none;
       cursor: pointer;
-    }
-
-    .button span {
-      position: relative;
-      color: #fff;
-      letter-spacing: 4px;
-      z-index: 1;
-    }
-
-    .button .liquid {
-      position: absolute;
-      top: -80px;
-      left: 0;
-      width: 100%;
-      height: 200px;
-      background: linear-gradient(90deg, $gradient1, $gradient2, $gradient3);
-      box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
-      transition: 0.5s;
-    }
-
-    .button .liquid::after,
-    .button .liquid::before {
-      content: "";
-      width: 200%;
-      height: 200%;
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, -75%);
-      background: #fff;
-    }
-
-    .button .liquid::before {
-      border-radius: 45%;
-      background: rgba(20, 20, 20, 1);
-      animation: animate 5s linear infinite;
-    }
-
-    .button .liquid::after {
-      border-radius: 40%;
-      background: rgba(20, 20, 20, 0.5);
-      animation: animate 10s linear infinite;
-    }
-
-    .button:hover .liquid {
-      background: $gradient3;
-      top: -120px;
-      &::after {
-        animation: none;
-      }
-      &::before {
-        animation: none;
-      }
-    }
-  }
-
-  @include breakpoint-down(medium) {
-    .button__mobile {
-      position: relative;
-      padding: 15px 25px;
-      display: block;
-      text-decoration: none;
-      overflow: hidden;
-      border-radius: 15px;
-      border: none;
-      cursor: pointer;
-    }
-
-    .button__mobile span {
-      position: relative;
-      color: #fff;
-      letter-spacing: 4px;
-      z-index: 1;
-    }
-
-    .button__mobile .liquid {
-      position: absolute;
-      top: -80px;
-      left: 0;
-      width: 100%;
-      height: 200px;
-      background: linear-gradient(
-        90deg,
-        $gradient1,
-        $gradient2,
-        $gradient3,
-        $gradient4
-      );
-      box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
-      transition: 0.5s;
-    }
-
-    .button__mobile .liquid::after,
-    .button__mobile .liquid::before {
-      content: "";
-      width: 200%;
-      height: 200%;
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, -75%);
-      background: #fff;
-    }
-
-    .button__mobile .liquid::before {
-      border-radius: 45%;
-      background: rgba(20, 20, 20, 1);
-      animation: animate 5s linear infinite;
-    }
-
-    .button__mobile .liquid::after {
-      border-radius: 40%;
-      background: rgba(20, 20, 20, 0.5);
-      animation: animate 10s linear infinite;
-    }
-
-    .button__mobile:hover .liquid {
-      background: $gradient3;
-      top: -120px;
-      &::after {
-        animation: none;
-      }
-      &::before {
-        animation: none;
-      }
+      font-size: $font-sm;
     }
   }
 }

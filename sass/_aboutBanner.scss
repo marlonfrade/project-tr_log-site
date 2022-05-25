@@ -1,0 +1,109 @@
+.process {
+  width: 100%;
+  height: 100vh;
+  background-color: #221e1f;
+}
+.marginTop {
+  width: 100%;
+  height: 150px;
+}
+.centerBox {
+  width: 70%;
+  height: 366px;
+  margin-left: 15%;
+  background-image: url("../images/line.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.centerBoxMobile {
+  display: none;
+}
+.infoIconBox {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.iconBox {
+  height: 100%;
+  margin: auto;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.5;
+  padding-top: 250px;
+}
+
+.iconBox:nth-child(1) {
+  width: 25%;
+  margin-left: 10%;
+  background-image: url("../icons/picki-icon.svg");
+  background-repeat: no-repeat;
+  background-position-x: 130px;
+  background-position-y: 130px;
+}
+.iconBox:nth-child(1):hover {
+  background-image: url("../icons/picka-icon.svg");
+  color: #fff;
+  opacity: 1;
+}
+.iconBox:nth-child(2) {
+  width: 30%;
+  background-image: url("../icons/transa-icon.svg");
+  background-repeat: no-repeat;
+  background-position-x: 130px;
+  background-position-y: 130px;
+}
+.iconBox:nth-child(2):hover {
+  background-image: url("../icons/transi-icon.svg");
+  opacity: 1;
+}
+.iconBox:nth-child(3) {
+  width: 25%;
+  margin-right: 10%;
+  background-image: url("../icons/sendi-icon.svg");
+  background-repeat: no-repeat;
+  background-position-x: 100px;
+  background-position-y: 135px;
+}
+.iconBox:nth-child(3):hover {
+  background-image: url("../icons/senda-icon.svg");
+  opacity: 1;
+}
+.mobileProcessInfo {
+  display: none;
+}
+.processInfo {
+  width: 25%;
+  height: 165px;
+  margin-top: 50px;
+  margin-left: 20%;
+  opacity: 1;
+  -webkit-transition: opacity 1000ms linear;
+  transition: opacity 1000ms linear;
+}
+.processInfo span {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 149%;
+  color: #ffffff;
+  padding-left: 10px;
+}
+.processInfo p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #b0aeae;
+  padding-left: 10px;
+  text-align: justify;
+}

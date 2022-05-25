@@ -1,123 +1,174 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
+    <!-- displays site properly based on user's device -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+
+    <!-- SASS -->
     <link rel="stylesheet" href="/sass/style.css" />
+
+    <!-- FavIcon -->
     <link
       rel="shortcut icon"
       href="/assets/images/favicon.svg"
       type="image/x-icon"
     />
+    <!-- Title -->
     <title>TR.LOG</title>
   </head>
 
   <body>
-    <div class="topBanner">
-      <div class="topMenu">
-        <div class="topLogo">
-          <img src="assets/images/top_logo.svg" id="logoMenu" />
+    <header class="header">
+      <div class="overlay has-fade"></div>
+
+      <nav class="container container--pall flex flex-jc-sb flex-ai-c">
+        <a href="/" class="header__logo">
+          <img src="assets/images/top_logo.svg" id="logoMenu" alt="Logo" />
+        </a>
+
+        <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+
+        <div class="header__links hide-for-mobile">
+          <a nav href="#about" class="home">Home</a>
+          <a nav href="#process" class="apresentation">Quem Somos</a>
+          <a nav href="#offer" class="privacy">Serviços</a>
+          <a nav href="#contact" class="security">Contato</a>
         </div>
-        <div class="menuItens">
-          <ul>
-            <a href="#whyTrust">
-              <li>HOME</li>
-            </a>
-            <a href="#process">
-              <li>QUEM SOMOS</li>
-            </a>
-            <a href="#offer">
-              <li>SERVIÇOS</li>
-            </a>
-            <a href="#contact">
-              <li>CONTATO</li>
-            </a>
-          </ul>
-        </div>
-      </div>
-      <div class="titleInfo">
-        <span>NOSSO DESTINO FINAL É A SUA SATISFAÇÃO.</span>
-      </div>
-      <div class="titleDesc">
-        <span
-          >Nós entregamos sua carga com serviços confiáveis e especializados,
-          práticas conscientes de segurança, gerando uma maior satisfação de
-          nossos clientes.</span
+        <a href="#contact" class="button hide-for-mobile"> Entre em Contato </a>
+      </nav>
+
+      <div class="header__menu has-fade">
+        <a nav href="#about" onclick="hamMenu()" class="home">Home</a>
+        <a nav href="#process" onclick="hamMenu()" class="apresentation"
+          >Quem Somos</a
         >
+        <a nav href="#offer" onclick="hamMenu()" class="privacy">Serviços</a>
+        <a nav href="#contact" onclick="hamMenu()" class="security">Contato</a>
       </div>
-    </div>
-    <section class="whyTrust" id="whyTrust">
-      <aside class="textTitle">
-        <div class="info">
-          <span
-            >Por que confiar na
-            <span style="color: #7c161b">tr.log?</span></span
-          >
+    </header>
+
+    <section home class="hero">
+      <div class="container--banner">
+        <div class="hero__image first"></div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about__content container container--pall">
+        <div class="about__title">
+          <p>Por que confiar na <span style="color: #7c161b">tr.log?</span></p>
         </div>
-      </aside>
-      <article class="sectionDesc">
-        <div class="items">
-          <div class="sectionItem">
-            <div class="infoItens">
-              <span>Rastreabilidade</span>
-              <p>
+
+        <div class="aboutfeat container">
+          <div class="aboutfeat__grid">
+            <div class="aboutfeat__item">
+              <div class="aboutfeat__icon">
+                <img
+                  src="/assets/icons/rastreio-icon.svg"
+                  alt="Rastreabilidade"
+                />
+              </div>
+
+              <div class="aboutfeat__title">Rastreabilidade</div>
+
+              <div class="aboutfeat__description">
                 Rastreie as rotas de transporte da frota em tempo real até o
                 momento da entrega no destino final.
-              </p>
+              </div>
             </div>
-          </div>
-          <div class="sectionItem">
-            <div class="infoItens">
-              <span>Tecnologia de Ponta</span>
-              <p>
+
+            <div class="aboutfeat__item">
+              <div class="aboutfeat__icon">
+                <img
+                  src="/assets/icons/tech-icon.svg"
+                  alt="Tecnologia de Ponta"
+                />
+              </div>
+
+              <div class="aboutfeat__title">Tecnologia de Ponta</div>
+
+              <div class="aboutfeat__description">
                 Em toda a operação, desde o manuseio até o rastreio de cada
                 carga.
-              </p>
+              </div>
             </div>
-          </div>
-          <div class="break"></div>
-          <div class="sectionItem">
-            <div class="infoItens">
-              <span>Equipamentos Modernos</span>
-              <p>
+
+            <div class="aboutfeat__item">
+              <div class="aboutfeat__icon">
+                <img
+                  src="/assets/icons/fan-icon.svg"
+                  alt="Equipamentos Modernos"
+                />
+              </div>
+
+              <div class="aboutfeat__title">Equipamentos Modernos</div>
+
+              <div class="aboutfeat__description">
                 Equipamentos de refrigeração de última geração para cargas
                 resfriadas e congeladas, mantendo a temperatura ideal do seu
                 produto.
-              </p>
+              </div>
             </div>
-          </div>
-          <div class="sectionItem">
-            <div class="infoItens">
-              <span>Personalização</span>
-              <p>
+
+            <div class="aboutfeat__item">
+              <div class="aboutfeat__icon">
+                <img src="/assets/icons/perso-icon.svg" alt="Personalização" />
+              </div>
+
+              <div class="aboutfeat__title">Personalização</div>
+
+              <div class="aboutfeat__description">
                 Logística personalizada para atender a necessidade de cliente
                 com qualidade e pontualidade.
-              </p>
+              </div>
             </div>
-          </div>
-          <div class="break"></div>
-          <div class="sectionItem">
-            <div class="infoItens">
-              <span>Seguridade</span>
-              <p>
-                Equipamentos de refrigeração de últime geração para cargas
+
+            <div class="aboutfeat__item">
+              <div class="aboutfeat__icon">
+                <img src="/assets/icons/safety-icon.svg" alt="Seguridade" />
+              </div>
+
+              <div class="aboutfeat__title">Seguridade</div>
+
+              <div class="aboutfeat__description">
+                Equipamentos de refrigeração de última geração para cargas
                 resfriadas e congeladas, mantendo a temperatura ideal do seu
                 produto.
-              </p>
+              </div>
             </div>
-          </div>
-          <div class="sectionItem">
-            <div class="infoItens">
-              <span>Expertise</span>
-              <p>
+
+            <div class="aboutfeat__item">
+              <div class="aboutfeat__icon">
+                <img src="/assets/icons/expert-icon.svg" alt="Expertise" />
+              </div>
+
+              <div class="aboutfeat__title">Expertise</div>
+
+              <div class="aboutfeat__description">
                 Motoristas, rigorosamente treinados e com ampla experiência no
-                manuseio e transporte de cargas sensíveis.
-              </p>
+                manuseio e transporte de cargas sensíveis. produto.
+              </div>
             </div>
           </div>
         </div>
-      </article>
+      </div>
     </section>
+
     <section class="process" id="process">
       <div class="marginTop"></div>
       <!-- DESKTOP -->
@@ -217,6 +268,7 @@
         </div>
       </div>
     </section>
+
     <section class="offer" id="offer">
       <div class="infoBox">
         <div class="infoText">
@@ -266,51 +318,50 @@
         </div>
       </div>
     </section>
+
     <section class="contact" id="contact">
-      <div class="container">
-        <div class="contactTitle">
-          <div style="width: 70%; margin: auto" id="cTitle">
-            <span
-              >Pronto para ser o protagonista da nossa próxima história de
-              sucesso?</span
-            >
-          </div>
+      <div class="contactTitle">
+        <div style="width: 70%; margin: auto" id="cTitle">
+          <span
+            >Pronto para ser o protagonista da nossa próxima história de
+            sucesso?</span
+          >
         </div>
-        <div class="contactForm">
-          <form action="form.php">
-            <div class="divInput">
-              <input
-                type="text"
-                class="contactInput"
-                placeholder="Nome:"
-                name="nome"
-              />
-            </div>
-            <div class="divInput">
-              <input
-                type="text"
-                class="contactInput"
-                placeholder="Telefone:"
-                name="telefone"
-              />
-            </div>
+      </div>
+      <div class="contactForm">
+        <form action="form.php">
+          <div class="divInput">
             <input
               type="text"
               class="contactInput"
-              placeholder="Email:"
-              name="email"
+              placeholder="Nome:"
+              name="nome"
             />
-            <br />
-            <textarea
-              class="textareaInput"
-              placeholder="Mensagem"
-              name="mensagem"
-            ></textarea>
-            <input type="submit" class="contactButton" value="Enviar" />
-          </form>
-        </div>
+          </div>
+          <div class="divInput">
+            <input
+              type="text"
+              class="contactInput"
+              placeholder="Telefone:"
+              name="telefone"
+            />
+          </div>
+          <input
+            type="text"
+            class="contactInput"
+            placeholder="Email:"
+            name="email"
+          />
+          <br />
+          <textarea
+            class="textareaInput"
+            placeholder="Mensagem"
+            name="mensagem"
+          ></textarea>
+          <input type="submit" class="contactButton" value="Enviar" />
+        </form>
       </div>
     </section>
   </body>
 </html>
-<script type="text/javascript" src="./assets/js/script.js"></script>
+<script type="text/javascript" src="./js/script.js"></script>
