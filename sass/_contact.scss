@@ -1,78 +1,146 @@
 .contact {
   width: 100%;
-  height: 50vh;
-  background-color: #221e1f;
-  overflow: auto;
-}
+  height: 80vh;
 
-.contactTitle {
-  width: 50%;
-  height: 100%;
-  float: left;
-  text-align: justify;
-}
-.contactTitle span {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 135%;
-  color: #ffffff;
-}
-.contactForm {
-  width: 50%;
-  height: 100%;
-  float: left;
-}
-.divInput {
-  width: 50%;
-  height: 50px;
-  float: left;
-  margin-bottom: 20px;
-}
-.contactInput {
-  width: 90%;
-  height: 40px;
+  @include breakpoint-up(medium) {
+    padding: 0 15%;
+    margin-top: 100px;
+    height: 60vh;
+  }
+
+  @include breakpoint-up(large) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+  }
   background-color: #221e1f;
-  border: 1px solid #fff;
-  padding-left: 10px;
-  margin-bottom: 20px;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 22px;
-  color: #ffffff;
-  opacity: 0.5;
-}
-.contactInput:nth-child(3) {
-  width: 95%;
-}
-.textareaInput {
-  width: 95%;
-  height: 200px;
-  background-color: #221e1f;
-  border: 1px solid #fff;
-  padding-left: 10px;
-  resize: none;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 22px;
-  color: #ffffff;
-  opacity: 0.5;
-  padding-top: 10px;
-  margin-bottom: 20px;
-}
-.contactButton {
-  width: 97%;
-  height: 40px;
-  background: #ffffff;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 30px;
-  color: #221e1f;
+
+  &__title {
+    width: 100%;
+    margin-bottom: 50px;
+    text-align: center;
+
+    @include breakpoint-up(large) {
+      width: 40%;
+      height: 100%;
+      float: left;
+      text-align: left;
+    }
+
+    span {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 135%;
+      color: #ffffff;
+
+      @include breakpoint-up(medium) {
+        font-size: 30px;
+      }
+    }
+  }
+
+  &__form {
+    width: 100%;
+    margin: 0 auto;
+
+    @include breakpoint-up(large) {
+      width: 50%;
+      height: 100%;
+      float: left;
+    }
+
+    .divInput {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      // width: 50%;
+      // height: 50px;
+      // float: left;
+      // margin-bottom: 20px;
+
+      input {
+        width: 48%;
+        height: 40px;
+        background-color: #221e1f;
+        border: 1px solid #fff;
+        padding-left: 10px;
+        margin-bottom: 20px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        color: #ffffff;
+        opacity: 0.5;
+        border-radius: 5px;
+
+        &:focus {
+          opacity: 1;
+          outline: none;
+        }
+      }
+    }
+
+    input[type="email"] {
+      width: 100%;
+      height: 40px;
+      background-color: #221e1f;
+      border: 1px solid #fff;
+      padding-left: 10px;
+      margin-bottom: 20px;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 22px;
+      color: #ffffff;
+      opacity: 0.5;
+      border-radius: 5px;
+
+      &:focus {
+        opacity: 1;
+        outline: none;
+      }
+    }
+
+    textarea {
+      width: 100%;
+      height: 200px;
+      background-color: #221e1f;
+      border: 1px solid #fff;
+      padding-left: 10px;
+      resize: none;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 22px;
+      color: #ffffff;
+      opacity: 0.5;
+      padding-top: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+
+      &:focus {
+        opacity: 1;
+        outline: none;
+      }
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      height: 50px;
+      border: none;
+      background: $redBanner;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 30px;
+      color: $white;
+      border-radius: 5px;
+    }
+  }
 }

@@ -1,109 +1,178 @@
-.process {
+.aboutBanner {
   width: 100%;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #221e1f;
-}
-.marginTop {
-  width: 100%;
-  height: 150px;
-}
-.centerBox {
-  width: 70%;
-  height: 366px;
-  margin-left: 15%;
-  background-image: url("../images/line.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  display: flex;
-  flex-wrap: nowrap;
-}
-.centerBoxMobile {
-  display: none;
-}
-.infoIconBox {
-  width: 100%;
-  display: flex;
-  flex-wrap: nowrap;
-}
-.iconBox {
-  height: 100%;
-  margin: auto;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 30px;
-  text-align: center;
-  color: #ffffff;
-  opacity: 0.5;
-  padding-top: 250px;
-}
 
-.iconBox:nth-child(1) {
-  width: 25%;
-  margin-left: 10%;
-  background-image: url("../icons/picki-icon.svg");
-  background-repeat: no-repeat;
-  background-position-x: 130px;
-  background-position-y: 130px;
-}
-.iconBox:nth-child(1):hover {
-  background-image: url("../icons/picka-icon.svg");
-  color: #fff;
-  opacity: 1;
-}
-.iconBox:nth-child(2) {
-  width: 30%;
-  background-image: url("../icons/transa-icon.svg");
-  background-repeat: no-repeat;
-  background-position-x: 130px;
-  background-position-y: 130px;
-}
-.iconBox:nth-child(2):hover {
-  background-image: url("../icons/transi-icon.svg");
-  opacity: 1;
-}
-.iconBox:nth-child(3) {
-  width: 25%;
-  margin-right: 10%;
-  background-image: url("../icons/sendi-icon.svg");
-  background-repeat: no-repeat;
-  background-position-x: 100px;
-  background-position-y: 135px;
-}
-.iconBox:nth-child(3):hover {
-  background-image: url("../icons/senda-icon.svg");
-  opacity: 1;
-}
-.mobileProcessInfo {
-  display: none;
-}
-.processInfo {
-  width: 25%;
-  height: 165px;
-  margin-top: 50px;
-  margin-left: 20%;
-  opacity: 1;
-  -webkit-transition: opacity 1000ms linear;
-  transition: opacity 1000ms linear;
-}
-.processInfo span {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 149%;
-  color: #ffffff;
-  padding-left: 10px;
-}
-.processInfo p {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 22px;
-  color: #b0aeae;
-  padding-left: 10px;
-  text-align: justify;
+  &__box {
+    width: 100%;
+    background-image: url("../assets/images/line.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 95%;
+    display: flex;
+    flex-wrap: nowrap;
+
+    @include breakpoint-up(large) {
+      background-size: 50%;
+    }
+
+    &__icons {
+      position: relative;
+      display: flex;
+      width: 100%;
+      height: 165px;
+      margin: 0 auto;
+      opacity: 1;
+      -webkit-transition: opacity 1000ms linear;
+      transition: opacity 1000ms linear;
+
+      @include breakpoint-up(medium) {
+        height: 370px;
+      }
+
+      @include breakpoint-up(large) {
+        width: 55%;
+      }
+
+      span {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        color: #ffffff;
+        opacity: 0.5;
+        position: relative;
+        top: 100%;
+
+        // Margin on Span
+        &.one {
+          margin-right: 20px;
+          @include breakpoint-up(medium) {
+            margin-left: 17%;
+            font-size: 30px;
+          }
+        }
+
+        &.two {
+          @include breakpoint-up(medium) {
+            font-size: 30px;
+            left: 20%;
+          }
+        }
+
+        &.three {
+          margin-left: 20px;
+          @include breakpoint-up(medium) {
+            font-size: 30px;
+            left: 35%;
+          }
+        }
+      }
+
+      div {
+        &:nth-child(1) {
+          width: 100%;
+          margin-left: 7%;
+          background-image: url("../assets/icons/picki-icon.svg");
+          background-repeat: no-repeat;
+          background-size: 70px;
+          background-position: 60% 40%;
+          transition: all 500ms ease-in-out;
+
+          @include breakpoint-up(medium) {
+            background-size: 70%;
+          }
+
+          &:hover {
+            background-image: url("../assets/icons/picka-icon.svg");
+            color: #fff;
+            & span {
+              opacity: 1;
+            }
+          }
+        }
+
+        &:nth-child(2) {
+          width: 100%;
+          background-image: url("../assets/icons/transa-icon.svg");
+          background-repeat: no-repeat;
+          background-size: 80px;
+          background-position: 75% 50%;
+          transition: all 500ms ease-in-out;
+
+          @include breakpoint-up(medium) {
+            background-size: 80%;
+            background-position: 100% 50%;
+          }
+
+          &:hover {
+            background-image: url("../assets/icons/transi-icon.svg");
+            & span {
+              opacity: 1;
+            }
+          }
+        }
+
+        &:nth-child(3) {
+          width: 100%;
+          margin-right: 10%;
+          background-image: url("../assets/icons/sendi-icon.svg");
+          background-repeat: no-repeat;
+          background-size: 70px;
+          background-position: 90% 50%;
+          transition: all 500ms ease-in-out;
+
+          @include breakpoint-up(medium) {
+            background-size: 70%;
+            background-position: 100% 50%;
+          }
+
+          &:hover {
+            background-image: url("../assets/icons/senda-icon.svg");
+            & span {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__info {
+    margin-top: 200px;
+    padding: 0px 20px;
+
+    @include breakpoint-up(medium) {
+      padding: 0 25%;
+    }
+
+    span {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 149%;
+      color: #ffffff;
+      padding-left: 10px;
+      @include breakpoint-up(medium) {
+        font-size: $font-med;
+      }
+    }
+    p {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 22px;
+      color: #b0aeae;
+      padding-left: 10px;
+      text-align: justify;
+    }
+  }
 }

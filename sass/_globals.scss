@@ -70,10 +70,7 @@ p {
 a,
 a:visited {
   color: $white;
-}
-
-a:hover {
-  color: #99a9ff;
+  text-decoration: none;
 }
 
 // Espaçamento
@@ -159,33 +156,6 @@ a:hover {
   &-ai-c {
     align-items: center;
   }
-}
-
-//Buttons
-
-// button,
-// .button {
-//   display: inline-block;
-//   padding: 0.875rem 2.1875rem;
-//   background: linear-gradient(to right, $limeGreen, $brightCyan);
-//   border: 0;
-//   border-radius: 50px;
-//   cursor: pointer;
-//   color: $white;
-//   font-weight: 400;
-//   font-size: $font-sm;
-//   transition: opacity 300ms ease-in-out;
-
-//   &:hover {
-//     opacity: 0.75;
-//   }
-// }
-
-// Logo
-.logoMonkey {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 // Responsivo

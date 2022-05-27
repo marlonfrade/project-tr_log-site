@@ -128,14 +128,16 @@
 
   @include breakpoint-up(large) {
     .button {
+      height: 40px;
       position: relative;
       padding: 10px 25px;
       display: block;
       text-decoration: none;
       overflow: hidden;
-      border-radius: 15px;
+      border-radius: 5px;
       border: none;
       cursor: pointer;
+      background: $redBanner;
       font-size: $font-sm;
     }
   }

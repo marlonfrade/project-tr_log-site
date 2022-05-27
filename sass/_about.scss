@@ -11,8 +11,11 @@
   }
 
   &__title {
-    @include breakpoint-down(medium) {
+    @include breakpoint-up(medium) {
       padding: 20px;
+    }
+    @include breakpoint-up(large) {
+      padding: 0px;
     }
 
     p,
@@ -59,10 +62,6 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr auto;
-        grid-template-areas:
-          "item1 item2 "
-          "item3 item4"
-          "item5 item6";
         gap: 0rem;
         justify-items: center;
       }

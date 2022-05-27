@@ -1,5 +1,6 @@
 .hero {
   background: none;
+  position: relative;
 
   .container {
     @include breakpoint-up(large) {
@@ -8,13 +9,19 @@
     }
   }
 
-  .container_hide {
+  .hidden {
     display: none;
+  }
+
+  .animationIn {
+    -webkit-animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+    animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   }
 
   .first {
     position: relative;
-    background-image: url("/assets/Banner/ate1.png");
+    background-image: url("/assets/Banner/arte1.png");
     width: 100%;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -38,7 +45,7 @@
         content: "";
         position: absolute;
         height: 100%;
-        background-image: url("/assets/Banner/ate1.png");
+        background-image: url("/assets/Banner/arte1.png");
         background-repeat: no-repeat;
         background-position: center top;
         width: 100%;
@@ -49,22 +56,22 @@
 
   .second {
     position: relative;
-    background-image: url(/public/img/presentationBG.jpg);
+    background-image: url("/assets/Banner/arte2.png");
     width: 100%;
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center center;
-    min-height: 8rem;
+    min-height: 15rem;
 
     @include breakpoint-up(medium) {
-      min-height: 25rem;
+      min-height: 28rem;
       background-position: center 0%;
     }
 
     @include breakpoint-up(large) {
       flex: 3;
       order: 2;
-      height: 35rem;
+      height: 55rem;
       background-image: none;
     }
 
@@ -73,34 +80,34 @@
         content: "";
         position: absolute;
         height: 100%;
-        background-image: url(/public/img/presentationBG.jpg);
+        background-image: url("/assets/Banner/arte2.png");
         background-repeat: no-repeat;
-        background-position: center bottom;
-        width: 150%;
-        background-size: 66.7%;
-        background-position: 0% 60%;
+        background-position: center top;
+        width: 100%;
+        background-size: 100%;
+        // transform: translateX(-100%);
       }
     }
   }
 
   .third {
     position: relative;
-    background-image: url(/public/img/aboutBG.jpg);
+    background-image: url("/assets/Banner/arte3.png");
     width: 100%;
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center center;
-    min-height: 8rem;
+    min-height: 15rem;
 
     @include breakpoint-up(medium) {
-      min-height: 25rem;
+      min-height: 28rem;
       background-position: center 0%;
     }
 
     @include breakpoint-up(large) {
       flex: 3;
       order: 2;
-      height: 35rem;
+      height: 55rem;
       background-image: none;
     }
 
@@ -109,12 +116,66 @@
         content: "";
         position: absolute;
         height: 100%;
-        background-image: url(/public/img/aboutBG.jpg);
+        background-image: url("/assets/Banner/arte3.png");
         background-repeat: no-repeat;
-        background-position: center bottom;
-        width: 150%;
-        background-size: 66.7%;
-        background-position: 0% 60%;
+        background-position: center top;
+        width: 100%;
+        background-size: 100%;
+      }
+    }
+  }
+
+  &__icons {
+    position: relative;
+    width: 100%;
+    height: 80px;
+
+    @include breakpoint-up(large) {
+      position: absolute;
+    }
+
+    img {
+      position: absolute;
+      &.instagram {
+        top: -12%;
+        left: 60%;
+        width: 95px;
+        @include breakpoint-up(medium) {
+          top: -50%;
+          left: 65%;
+          width: 155px;
+        }
+        @include breakpoint-up(large) {
+          top: -258%;
+          left: 78%;
+          width: 175px;
+        }
+        @include breakpoint-up(x-large) {
+          top: -160%;
+          left: 81%;
+          width: 175px;
+        }
+      }
+
+      &.whatsapp {
+        top: 0;
+        left: 85%;
+        width: 40px;
+        @include breakpoint-up(medium) {
+          top: -30%;
+          left: 85%;
+          width: 70px;
+        }
+        @include breakpoint-up(large) {
+          top: -235%;
+          left: 90%;
+          width: 75px;
+        }
+        @include breakpoint-up(x-large) {
+          top: -140%;
+          left: 90%;
+          width: 75px;
+        }
       }
     }
   }
